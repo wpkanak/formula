@@ -1,0 +1,614 @@
+/* =======================================================================
+Template Name: Porlo
+Author:  ThemeStok
+Author URI: http://ThemeStok.Net
+Version: 1.0
+Description: This Template is created for web template   
+--------------------------------------------------------------------------
+ CSS Index
+
+* Default CSS
+* Topbar CSS
+* Banner CSS
+* Features CSS
+* About CSS
+* Service CSS
+* Counter CSS
+* Portfolio CSS
+* Review CSS
+
+
+/* Google Fonts
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================================================
+   Default CSS
+   ========================================================================== */
+
+body {
+  font-size: 16px;
+  font-family: 'Zilla Slab', serif;
+  line-height: 24px;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  color: #333;
+  font-family: 'Zilla Slab', serif;
+}
+a:hover,
+a:focus,
+a:active,
+button:focus {
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  font-family: 'Zilla Slab', serif;
+  color: #35359B;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Zilla Slab', serif;
+color: #333333;
+padding: 0;
+margin: 0;
+}
+h2 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+/* ==========================================================================
+   Top bar CSS
+   ========================================================================== */
+.header-top {
+  background-color: #36cbb8;
+  padding: 15px 0px;
+}
+ .top-bar-left {
+  text-align: left;
+}
+.top-bar-left li {
+  color: #fff;
+}
+.top-bar-left ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.top-bar-left li span i::before {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+.top-bar-left li:last-child{
+  margin: 0;
+}
+.top-bar-right {
+  text-align: right;
+}
+.top-bar-right ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.top-bar-right li a {
+  color: #fff;
+}
+.top-bar-right li:last-child {
+  margin: 0;
+}
+/* ==========================================================================
+   Main Menu CSS
+   ========================================================================== */
+   .main-menu {
+  padding: 0px 0px;
+  box-shadow: 0px 25px 30px #e6e2e29e;
+}
+   .header-area {
+    background: #fff;
+  }
+  .logo img {
+    width: 190px;
+  }
+
+.logo {
+  padding: 25px 0px;
+  text-align: left;
+}
+.logo a {
+  display: inline-block;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+          font-family: 'Crimson Text', serif;
+}
+.menu-btn {
+  margin-top: 25px;
+  text-align: right;
+}
+.main-menu {
+  padding: 0px 0px;
+}
+.header__nav {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   font-weight: 500;
+   text-align: right;
+}
+
+.header__nav li {
+  display: inline-block;
+  position: relative;
+  padding: 25px;
+}
+
+.header__nav li a {
+  display: block;
+  color: #000A2D;
+  line-height: 39px;
+  transition: .3s;
+  font-size: 18px;
+}
+.header__nav li.has-children > a::after {
+  border-bottom: 1px solid rgb(4, 4, 4);
+  border-right: 1px solid rgb(0, 0, 0);
+  content: '';
+  display: block;
+  height: 6px;
+  width: 6px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+  top: 46px;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(43deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header__nav li:hover > a, .header__nav li:focus > a {
+  color: #36cbb8;
+}
+
+.header__nav li ul li a:hover, .header__nav li ul li a:focus {
+  color:#36cbb8;
+}
+
+.header__nav li:hover li, .header__nav li:focus li {
+   background: #ffff;
+}
+.header__nav li:nth-child(2) {
+  margin: 0;
+}
+.header__nav li:nth-child(3) {
+  margin: 0;
+}
+.header__nav li.current > a {
+  color: #000A2D;
+  transition: .3s;
+}
+.header__nav li.current > a:hover{
+   color: #36cbb8;
+}
+.header__nav li ul {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  font-size: 20px;
+  margin: 0;
+  padding: 1.8rem 0;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  z-index: 500;
+  -webkit-transform: translate3d(0, 15px, 0);
+  -ms-transform: translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__nav li ul ul {
+   position: absolute;
+   top: 0;
+   left: 100%;
+   left: calc(100% + 1px);
+   border-radius: 0 0 3px 3px;
+   padding-top: 1.2rem;
+}
+
+.header__nav li ul li {
+   display: block;
+   text-align: left;
+   padding: 0;
+   margin: 0;
+   min-height: 33px;
+   width: 100%;
+}
+
+.header__nav li ul li a {
+  display: block;
+  white-space: nowrap;
+  padding: 7.5px 3rem 7.5px 2rem;
+  line-height: 18px;
+  color: #000A2D;
+}
+
+.header__nav li ul li a:hover, .header__nav li ul li a:focus {
+   color: #36cbb8;
+}
+
+.header__nav li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  border-top: 3px solid #36cbb8;
+}
+
+.header__nav li.has-children:hover > a::after, 
+.header__nav li.has-children:focus > a::after {
+      -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      transform: rotate(225deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#responsive-menu {
+  display: none;
+}
+.slicknav_nav a {
+  font-size: 16px;
+}
+/* ==========================================================================
+   Top bar CSS
+   ========================================================================== */
+.blog-area {
+  padding: 100px 0px;
+}
+.post-tag ul{
+  display: inline-block;
+}
+.post-tag ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.post-tag li a {
+  background: #1AB651;
+  color: #fff;
+  padding: 12px 15px;
+  transition: .3s;
+}
+.post-tag li a:hover {
+  background-color: #36cbb8;
+}
+.post-tag {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.post-meta ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.post-meta li span i::before {
+  margin-right: 6px;
+  color: #1AB651;
+}
+.post-img {
+  margin-bottom: 15px;
+}
+.single-post a h2 {
+  margin: 15px 0px;
+}
+.single-post {
+  padding: 35px;
+  box-shadow: 1px 4px 30px 14px #cabfbf36;
+}
+.post_btn {
+  color: #36CBB8;
+  transition: .3s;
+}
+.single-post p {
+  margin-bottom: 20px;
+}
+
+/* custom header sidebar */
+
+.header-sidebar-icon i {
+  display: inline-block;
+  cursor: pointer;
+}
+.header-sidebar-icon i::before {
+  margin: 0;
+  background: #36cbb8;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.header-sidebar-icon {
+  padding: 33px 0px;
+  text-align: right;
+}
+
+.header-sidebar {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  right: 0;
+  overflow: auto;
+  transform: translateX(100%);
+  top: 0;
+  background: #343639;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  transition: all 0.3s ease 0s;
+  padding: 30px 40px;
+}
+.header-sidebar.active{
+opacity:1;
+visibility:visible;
+transform:translateX(0%);
+right:0;
+}
+.header-sidebar-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.header-sidebar-close i {
+  color: #fff;
+  background: #36cbb8;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.header-sidebar-content {
+  text-align: center;
+}
+
+.header-sidebar-content h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+  position: relative;
+}
+.header-sidebar-content h3:after {
+  border-bottom: 2px solid #36cbb8;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 120px;
+}
+.header-sidebar-content img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.header-sidebar-content h4 {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.header-sidebar-content p {
+  color: #c9c8c8;
+}
+
+.header-sidebar-social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.header-sidebar-social li:last-child {
+  margin: 0;
+}
+.header-sidebar-social li a i {
+  color: #fff;
+  font-size: 20px;
+}
+.header-sidebar-social {
+  margin: 20px 0px;
+}
+
+.header-sidebar-content form.search-box {
+  position: relative;
+  width: 100%;
+}
+.search-box input[type="text"] {
+  color: #333;
+  display: block;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 60px;
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  background: #fff;
+}
+.search-box button {
+  display: block;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  padding: 9px 0px;
+  position: absolute;
+  right: 6px;
+  text-align: center;
+  top: 5px;
+  background: #36cbb8;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+/* ==========================================================================
+   Footer CSS
+   ========================================================================== */
+.footer {
+  background: #343639;
+  padding: 100px 0px;
+}
+.footer-widget h3 {
+  color: #fff;
+}
+.widget {
+  margin-top: 30px;
+}
+.contact-info p {
+  color: #bfbfbf;
+  margin-bottom: 20px;
+}
+.contact-info li {
+  color: #bfbfbf;
+  margin-bottom: 10px;
+}
+.contact-info li:last-child {
+  margin: 0;
+}
+.contact-info li span {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.widget a {
+  color: #bfbfbf;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.widget a:hover {
+  color: #36cbb8;
+}
+.footer-menu li {
+  margin-bottom: 15px;
+}
+.footer-menu li:last-child {
+  margin: 0;
+}
+.blog-widget li {
+  margin-bottom: 15px;
+}
+.blog-widget li a {
+  font-size: 15px;
+  line-height: 26px;
+}
+.blog-widget li p {
+  font-style: italic;
+  font-size: 13px;
+  color: #fff;
+}
+.social-icon li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.social-icon li:last-child {
+  margin: 0;
+}
+.social-icon li a {
+  background: #1AB651;
+  color: #fff;
+  display: block;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  vertical-align: middle;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.social-icon li a:hover {
+  background-color: #36cbb8;
+  color: #fff;
+}
+.update-news input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background: #fff;
+  height: 50px;
+  padding-left: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #233d63;
+  border-radius: 30px;
+}
+.update-news button {
+  width: 100%;
+  border: none;
+  background-color: #36cbb8;
+  color: #fff;
+  font-weight: 500;
+  height: 50px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
